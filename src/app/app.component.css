@@ -1,0 +1,39 @@
+#cart {
+  padding-top: 50px;
+  text-align: center;
+}
+#modal-cart {
+  background: none;
+  position: fixed;
+  top: 0;
+  height: 120px;
+  width: 100%;
+  border: none;
+}
+
+#name {
+  color: #ffffff;
+}
+#product-text {
+  color: #0c5b81;
+}
+
+#cart-button {
+  text-align: right;
+}
+.btn {
+  color: #ffffff;
+  background: #0c5b81;
+}
+.modal-header {
+  color: #0c5b81;
+  background: #f2ede7;
+}
+
+.modal-body {
+  color: #0c5b81;
+  background: #f2ede7;
+}
+.modal-footer {
+  background: #f2ede7;
+}

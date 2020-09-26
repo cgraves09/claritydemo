@@ -1,0 +1,51 @@
+<div>
+  <ngbd-modal-basic></ngbd-modal-basic>
+  <app-hero></app-hero>
+  <div id="skills" class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="row">
+          <div class="col-md-6">
+            <h3 id="product-text">Skills I have to offer!</h3>
+          </div>
+          <ng-template #content let-modal>
+            <div class="modal-header">
+              <h4 class="modal-title" id="modal-basic-title">
+                Skills you have requested
+              </h4>
+              <button
+                type="button"
+                class="close"
+                aria-label="Close"
+                (click)="modal.dismiss()"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <h6 *ngFor="let cart of carts">{{ cart }}</h6>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-outline-dark"
+                (click)="modal.close('Save click')"
+              >
+                Great lets get to work!
+              </button>
+            </div>
+          </ng-template>
+          <div id="cart-button" class="col-md-6">
+            <button class="btn btn-lg" type="button" (click)="open(content)">
+              View Cart
+            </button>
+          </div>
+        </div>
+
+        <div class="row">
+          <app-skill-items class="row"></app-skill-items>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

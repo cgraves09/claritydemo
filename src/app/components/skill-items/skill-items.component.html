@@ -1,0 +1,7 @@
+<app-skill-item
+  id="columns"
+  class="col-md-4"
+  *ngFor="let skill of skills"
+  [skill]="skill"
+  (addSkill)="addSkill($event)"
+></app-skill-item>

@@ -1,0 +1,11 @@
+<div id="items" [ngClass]="setClasses()">
+  <div class="card" style="width: 18rem">
+    <img class="img-fluid" [src]="skill.image" alt="Card image cap" />
+    <div class="card-body">
+      <h5 class="card-title">{{ skill.title }}</h5>
+      <button class="btn btn-primary" (click)="onClick(skill)">
+        Add to Cart
+      </button>
+    </div>
+  </div>
+</div>

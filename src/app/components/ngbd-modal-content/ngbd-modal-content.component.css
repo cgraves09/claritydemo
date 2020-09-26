@@ -1,0 +1,14 @@
+#modal-cart {
+  background: none;
+  position: fixed;
+  top: 0;
+  height: 120px;
+  width: 100%;
+  border: none;
+}
+
+#name {
+  font-family: "babe neue";
+  font-size: 40px;
+  color: #0c5b81;
+}
